@@ -1,0 +1,212 @@
+{%extends 'app1/index.html'%} 
+
+{%block content%}
+{%load static%}
+
+<link rel="stylesheet" href="{%static 'css/vista-cli-home.css'%}">
+
+<br>
+<br>
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-lg-3">
+
+      
+      <img id="logo"src="{%static 'img/FERME_FERRETERIA.png'%}" alt="">
+      <div id="categorias" class="list-group bg-secondary border border-dark ">
+        <a href="#" class="list-group-item active bg-dark">Herramientas</a>
+        <a href="#" class="list-group-item active bg-dark">Materiales de Construcción</a>
+        <a href="#" class="list-group-item active bg-dark">Maquinaria</a>
+      </div>
+
+    </div>
+    <!-- /.col-lg-3 -->
+
+    <div class="col-lg-9">
+
+      <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div id="carrusel" class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img id="img3"class="d-block img-fluid" src="{%static 'img/img-slider3.jpg'%}" alt="First slide">
+           
+          </div>
+          <div class="carousel-item">
+            <img id="img2" class="d-block img-fluid" src="{%static 'img/img-slider2.jpg'%}" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img id="img1"class="d-block img-fluid" src="{%static 'img/herramientas.jpg'%}" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-dark border border-dark rounded">
+            <a href="#"><img class="card-img-top" src="{%static 'img/soldadora.jpeg'%}" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a class="" href="#">Soldadora Arco Manual 110 A</a>
+              </h4>
+              <h5 class="text-danger">$180.000 C/U</h5>
+              <p class="card-text text-center">
+                <ul>
+                  <li>Marca : Indura</li>
+                  <li>Modelo: NanoWeld 120A</li>
+                  <li>Ancho: 30 cm</li>
+                  <li>Largo: 19 cm</li>
+                  <li>Alto: 25 cm</li>
+                </ul>
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-dark border border-dark rounded">
+            <a href="#"><img class="card-img-top" src="{%static 'img/kit_taladro.jpeg'%}" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Kit Taladro Percutor eléctrico 10mm 600W</a>
+              </h4>
+              <h5 class="text-danger">$38.990 C/U</h5>
+              <p class="card-text text-center">
+                <ul>
+                  <li>Marca: Bauker</li>
+                  <li>Modelo: ID750E KIT-70</li>
+                  <li>Tipo: Taladros eléctricos</li>
+                  <li>Ancho: 23 cm</li>
+                  <li>Largo: 23 cm</li>
+                  <li>Alto: 23 cm</li>
+                </ul>
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9733;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-dark border border-dark rounded">
+            <a href="#"><img class="card-img-top" src="{%static 'img/compresor.jpeg'%}" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Compresor de aire Portatil 2 HP 25 litros</a>
+              </h4>
+              <h5 class="text-danger">$99.990 C/U</h5>
+              <p class="card-text text-center">
+                <ul>
+                  <li>Marca: Bauker</li>
+                  <li>Modelo: Euro 225</li>
+                  <li>Tipo: Compresor</li>
+                  <li>Ancho: 25 cm</li>
+                  <li>Largo: 50 cm</li>
+                  <li>Alto: 57 cm</li>
+                </ul>
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-dark border border-dark rounded">
+            <a href="#"><img class="card-img-top" src="{%static 'img/generador.jpeg'%}" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Generador eléctrico a gasolina 3000W</a>
+              </h4>
+              <h5 class="text-danger"> $299.990 C/U</h5>
+              <p class="card-text text-center">
+                <ul>
+                  <li>Marca: Bauker</li>
+                  <li>Modelo: GG3400</li>
+                  <li>Ancho: 45 cm</li>
+                  <li>Largo: 59 cm</li>
+                  <li>Alto: 52 cm</li>
+                  <li>Alimentación: Gasolina</li>
+                </ul>
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-dark border border-dark rounded">
+            <a href="#"><img class="card-img-top" src="{%static 'img/clavo_techo.jpeg'%}" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="#">Clavo para techo 2 1/2 bolsa de 100 unidades</a>
+              </h4>
+              <h5 class="text-danger">$4.250 C/U</h5>
+              <p class="card-text text-center">
+              <ul>
+                <li>Marca: Fixser</li>
+              </ul>
+            </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card h-100 text-dark border border-dark rounded">
+            <a href="#"><img class="card-img-top" src="{%static 'img/set.jpeg'%}" alt=""></a>
+            <div class="card-body">
+              <h4 class="card-title text-center">
+                <a href="#">Set de dados y llaves 3/8 29 piezas</a>
+              </h4>
+              <h5 class="text-danger">$59.990 C/U</h5>
+              <p class="card-text">
+                <li>Marca: Ubermann</li>
+                <li>Este Juego para mecánica, mando 3/8", de 29 piezas y marca Ubermann, cuenta con un set completo para que realices tus trabajos de manera segura y eficiente.</li>
+                
+
+
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.col-lg-9 -->
+
+  </div>
+  <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+  {%endblock%}
